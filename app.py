@@ -17,7 +17,7 @@ def get_live_status(train_no):
     url = f"{BASE_URL}/trains/{train_no}/live"
     headers = {"Authorization": f"Bearer {RAILRADAR_API_KEY}"}
     try:
-        response = requests.get(url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=20)
         response.raise_for_status()
         payload = response.json()
     except requests.exceptions.RequestException as e:
