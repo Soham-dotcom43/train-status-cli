@@ -1,14 +1,22 @@
-# 🚆 Train Running Status Tracker
+# Train Status Tracker
 
-A Python command-line app that shows live running status of Indian trains — current station, delay, and next station — using the RailRadar API.
+Check train status in three ways: command line, desktop app, or website.
 
-## Features
-- Enter any train number to get live status
-- Shows current station, delay in minutes, and next station
-- Keeps running so you can check multiple trains in one session
+**Live demo:** https://train-status-tracker.onrender.com
+(Free hosting, so the first load may take 30-60 seconds.)
 
-## Setup
-1. Install dependencies: `pip install -r requirements.txt`
-2. Get a free API key at https://railradar.in/developers (no credit card required)
-3. Create a `.env` file with: `RAILRADAR_API_KEY=your_key_here`
-4. Run: `python train_status.py`
+## Versions
+- **CLI:** `train_status.py`
+- **Desktop GUI (Tkinter):** `train_status_gui.py`
+- **Web app (Flask):** `app.py`
+
+## Tech Used
+Python, Flask, Tkinter, Render
+
+## How to Run
+```
+pip install -r requirements.txt
+python train_status.py        # CLI
+python train_status_gui.py    # Desktop GUI
+python app.py                 # Web app, then open http://localhost:5000
+```
